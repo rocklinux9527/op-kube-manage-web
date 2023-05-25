@@ -42,7 +42,8 @@ npm run build:prod
 
 ## 2.8 脚本管理
 ![sys-temple](https://github.com/rocklinux9527/op-kube-manage-web/blob/master/img/8.%E6%A8%A1%E6%9D%BF%E6%B7%BB%E5%8A%A0.jpg)
-![sys-temple-download](https://github.com/rocklinux9527/op-kube-manage-web/blob/master/img/9.%E6%A8%A1%E6%9D%BF%E7%AE%A1%E7%90%86%E4%B8%8B%E8%BD%BD.jpg）
+
+![sys-temple-download](https://github.com/rocklinux9527/op-kube-manage-web/blob/master/img/9.%E6%A8%A1%E6%9D%BF%E7%AE%A1%E7%90%86%E4%B8%8B%E8%BD%BD.jpg)
 
 ## 2.9 系统用户管理
 ![sys-ns](https://github.com/rocklinux9527/op-kube-manage-web/blob/master/img/10.%E7%B3%BB%E7%BB%9F%E7%94%A8%E6%88%B7.jpg)
