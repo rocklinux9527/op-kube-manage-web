@@ -14,7 +14,7 @@ const service = axios.create({
 service.interceptors.request.use(
   config => {
     // do something before request is sent
-
+    config.baseURL = process.env.VUE_APP_BASE_API
     if (store.getters.token) {
       // let each request carry token
       // ['X-Token'] is a custom headers key

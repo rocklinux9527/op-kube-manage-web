@@ -108,6 +108,7 @@
 
 <script>
 import {get_kube_envList,get_kube_cluserList,get_kube_configList,get_k8s_kube_cluster_check,post_kube_configList,put_kube_configList,delete_kube_configList } from '@/api/kube-config'
+
 export default {
   data() {
     return {
