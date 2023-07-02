@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function get_kube_envList(query) {
   return request({
-    url: '/v1/kube/env/list/',
+    url: '/api/v1/kube/env/list/',
     method: 'get',
     params: query
   })
@@ -10,7 +10,7 @@ export function get_kube_envList(query) {
 
 export function get_kube_cluserList(query) {
   return request({
-    url: '/v1/kube/cluster/List/',
+    url: '/api/v1/kube/cluster/List/',
     method: 'get',
     params: query
   })
@@ -18,7 +18,7 @@ export function get_kube_cluserList(query) {
 
 export function get_kube_configList(query) {
   return request({
-    url: '/v1/k8s/kube/config/',
+    url: '/api/v1/k8s/kube/config/',
     method: 'get',
     params: query
   })
@@ -26,21 +26,21 @@ export function get_kube_configList(query) {
 
 export function get_k8s_kube_cluster_check(query) {
   return request({
-    url: '/check-kube-cluster',
+    url: '/api/check-kube-cluster',
     method: 'get',
     params: query
   })
 }
 export function post_kube_configList(data) {
   return request({
-    url: '/v1/k8s/kube/config/',
+    url: '/api/v1/k8s/kube/config/',
     method: 'post',
     data
   })
 }
 export function put_kube_configList(data) {
   return request({
-    url: '/v1/k8s/kube/config/',
+    url: '/api/v1/k8s/kube/config/',
     method: 'put',
     data
   })
@@ -48,7 +48,7 @@ export function put_kube_configList(data) {
 
 export function delete_kube_configList(data) {
   return request({
-    url: '/v1/k8s/kube/config/',
+    url: '/api/v1/k8s/kube/config/',
     method: 'delete',
     data
   })
