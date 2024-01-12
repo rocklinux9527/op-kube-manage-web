@@ -1,10 +1,10 @@
 # **1.基础环境**
 
 $ npm --version
-6.14.16
+8.19.4
 
 $ node --version
-v12.22.12
+v16.20.2
 
 2.编译vue build
 
@@ -41,7 +41,6 @@ npm run build:prod
 ![k8s-cluster-ingress](https://github.com/rocklinux9527/op-kube-manage-web/blob/master/img/7.ingress%E7%AE%A1%E7%90%86.jpg)
 
 ## 2.8 脚本管理
-![sys-temple](https://github.com/rocklinux9527/op-kube-manage-web/blob/master/img/8.%E6%A8%A1%E6%9D%BF%E6%B7%BB%E5%8A%A0.jpg)
 
 ![sys-temple-download](https://github.com/rocklinux9527/op-kube-manage-web/blob/master/img/9.%E6%A8%A1%E6%9D%BF%E7%AE%A1%E7%90%86%E4%B8%8B%E8%BD%BD.jpg)
 

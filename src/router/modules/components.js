@@ -7,24 +7,32 @@ const componentsRouter = {
   component: Layout,
   redirect: 'noRedirect',
   name: 'ComponentDemo',
+  alwaysShow: true,
   meta: {
     title: '运维管理',
     icon: 'component'
   },
   children: [
     {
-      path: 'script-manager',
-      component: () => import('@/views/scriptmanager/script-manager'),
-      name: '模版配置',
-      hidden: true,
+      path: 'temple-manager',
+      component: () => import('@/views/temple-manager/temple_tabs'),
+      name: '模版管理',
+     // hidden: true,
       meta: { title: '模版配置' }
     },
     {
-      path: 'templeManager',
-      component: () => import('@/views/scriptmanager/List'),
-      name: '模版管理',
-      meta: { title: '模版配置' }
-    }
+      path: 'envs-form',
+      component: () => import('@/views/application/envs_tabs'),
+      name: '环境配置',
+      hidden: true,
+      meta: { title: '环境配置' }
+    },
+    // {
+    //   path: 'templeManager',
+    //   component: () => import('@/views/scriptmanager/List'),
+    //   name: '模版管理',
+    //   meta: { title: '模版配置' }
+    // }
   ]
 }
 

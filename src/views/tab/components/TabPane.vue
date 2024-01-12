@@ -86,10 +86,10 @@ export default {
     }
   },
   created() {
-    this.getAnsibeHistory()
+    this.getList()
   },
   methods: {
-    getAnsibeHistory() {
+    getList() {
       this.loading = true
       this.$emit('create') // for test
       fetchList(this.listQuery).then(response => {

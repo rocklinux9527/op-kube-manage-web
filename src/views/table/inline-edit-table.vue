@@ -103,10 +103,10 @@ export default {
     }
   },
   created() {
-    this.getAnsibeHistory()
+    this.getList()
   },
   methods: {
-    async getAnsibeHistory() {
+    async getList() {
       this.listLoading = true
       const { data } = await fetchList(this.listQuery)
       const items = data.items

@@ -9,8 +9,6 @@ import Layout from '@/layout'
 /* Router Modules */
 import componentsRouter from './modules/components'
 import tableRouter from './modules/table'
-
-
 export const constantRoutes = [
   {
     path: '/redirect',
@@ -54,6 +52,21 @@ export const constantRoutes = [
         name: 'Dashboard',
         meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
       }
+    ]
+  },
+  {
+    path: '/example',
+    component: Layout,
+    redirect: '/example/table',
+    name: '应用',
+    meta: { title: '应用', icon: 'el-icon-s-help' },
+    children: [
+      {
+        path: 'table',
+        name: '应用',
+        component: () => import('@/views/application/index'),
+        meta: { title: '应用管理', icon: 'table' }
+      },
     ]
   },
   {
