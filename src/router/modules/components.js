@@ -21,12 +21,22 @@ const componentsRouter = {
       meta: { title: '模版配置' }
     },
     {
-      path: 'envs-form',
-      component: () => import('@/views/application/envs_tabs'),
+      path: 'env-manager',
+      component: () => import('@/views/env-manager/index'),
       name: '环境配置',
-      hidden: true,
       meta: { title: '环境配置' }
     },
+    {
+      path: 'envs-form',
+      component: () => import('@/views/application/envs_tabs'),
+      name: 'Container配置',
+      hidden: true,
+      meta: { title: '容器配置' }
+    },
+
+    
+     
+
     // {
     //   path: 'templeManager',
     //   component: () => import('@/views/scriptmanager/List'),
