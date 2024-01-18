@@ -93,227 +93,8 @@
           <el-input v-model="postFrom.name"> </el-input>
         </el-form-item>
 
-        <el-form-item label="描述" prop="remark">
-          <el-input type="input" v-model="postFrom.remark"></el-input>
-        </el-form-item>
-
-        <el-alert title="测试环境" type="success" :closable="false"> </el-alert>
-        <hr />
-        <el-form-item label="集群:" prop="cluster">
-          <el-select
-            placeholder="请选择集群"
-            v-model="postFrom.t_type"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item.key"
-              :label="item.key"
-              :value="item.value"
-              v-for="item in typeArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-        <el-form-item label="Deploy" prop="Deploy">
-          <el-select
-            v-model="postFrom.language"
-            placeholder="请选择模版"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item"
-              :label="item"
-              :value="item"
-              v-for="item in languageArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-
-        <el-form-item label="Service" prop="Service">
-          <el-select
-            v-model="postFrom.language"
-            placeholder="请选择模版"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item"
-              :label="item"
-              :value="item"
-              v-for="item in languageArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-
-        <el-form-item label="Ingress" prop="Ingress">
-          <el-select
-            v-model="postFrom.language"
-            placeholder="请选择模版"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item"
-              :label="item"
-              :value="item"
-              v-for="item in languageArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-
-        <el-alert title="预发环境" type="warning" :closable="false"> </el-alert>
-        <hr />
-        <el-form-item label="集群:" prop="cluster">
-          <el-select
-            placeholder="请选择集群"
-            v-model="postFrom.t_type"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item.key"
-              :label="item.key"
-              :value="item.value"
-              v-for="item in typeArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-
-        <el-form-item label="Deploy" prop="Deploy">
-          <el-select
-            v-model="postFrom.language"
-            placeholder="请选择模版"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item"
-              :label="item"
-              :value="item"
-              v-for="item in languageArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-
-        <el-form-item label="Service" prop="Service">
-          <el-select
-            v-model="postFrom.language"
-            placeholder="请选择模版"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item"
-              :label="item"
-              :value="item"
-              v-for="item in languageArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-        <el-form-item label="Ingress" prop="Ingress">
-          <el-select
-            v-model="postFrom.language"
-            placeholder="请选择模版"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item"
-              :label="item"
-              :value="item"
-              v-for="item in languageArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-
-        <el-alert title="生产环境" type="error" :closable="false"> </el-alert>
-        <hr />
-        <el-form-item label="集群:" prop="cluster">
-          <el-select
-            placeholder="请选择集群"
-            v-model="postFrom.t_type"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item.key"
-              :label="item.key"
-              :value="item.value"
-              v-for="item in typeArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-
-        <el-form-item label="Deploy" prop="Deploy">
-          <el-select
-            v-model="postFrom.language"
-            placeholder="请选择模版"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item"
-              :label="item"
-              :value="item"
-              v-for="item in languageArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-
-        <el-form-item label="Service" prop="Service">
-          <el-select
-            v-model="postFrom.language"
-            placeholder="请选择模版"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item"
-              :label="item"
-              :value="item"
-              v-for="item in languageArray"
-            >
-            </el-option>
-          </el-select>
-        </el-form-item>
-        <el-form-item label="Ingress" prop="Ingress">
-          <el-select
-            v-model="postFrom.language"
-            placeholder="请选择模版"
-            clearable
-            class="filter-item"
-            style="width: 385px"
-          >
-            <el-option
-              :key="item"
-              :label="item"
-              :value="item"
-              v-for="item in languageArray"
-            >
-            </el-option>
-          </el-select>
+        <el-form-item label="描述" prop="used">
+          <el-input type="input" v-model="postFrom.used"></el-input>
         </el-form-item>
       </el-form>
 
@@ -406,10 +187,7 @@ export default {
       showReviewer: false,
       postFrom: {
         name: "",
-        content: "",
-        t_type: "deployment",
-        language: "yaml",
-        remark: "",
+        used: ""
       },
       ClusterList: [],
       dialogFormVisible: false,
@@ -430,33 +208,6 @@ export default {
       },
       languageArray: ["yaml"],
       typeArray: [{ value: "6", key: "deployment" }],
-      cmOptions: {
-        // <!-- 以什么格式进行高亮 -->
-        mode: "yaml",
-        // <!-- 主题 -->
-        //  theme: 'seti',
-        // <!-- 是否代码折叠 -->
-        lineWrapping: true,
-        // <!-- 是否在编辑器左侧显示行号 -->
-        lineNumbers: true,
-        // <!-- 行号从哪个数开始计数，默认为1 -->
-        firstLineNumber: 1,
-
-        // <!-- tab字符的宽度，默认为4 -->
-        indentWithTabs: true,
-        // <!-- 自动缩进，设置是否根据上下文自动缩进,默认为true-->
-        smartIndent: true,
-        // <!-- 括号匹配 -->
-        matchBrackets: true,
-        // <!-- 是否在初始化时自动获取焦点 -->
-        autofocus: true,
-        // <!-- 智能提示  -->
-        extraKeys: { "Ctrl-Space": "autocomplete" },
-        // <!-- 编辑器是否只读,并且不能获得焦点 -->
-        readOnly: false,
-        // <!-- 在选择时是否显示光标，默认为false -->
-        showCursorWhenSelecting: true,
-      },
       downloadLoading: false,
     };
   },
@@ -498,34 +249,8 @@ export default {
     },
     postTemple() {
       this.$refs.dataForm.validate((valid) => {
-        const dd = {
-          test: {
-            service_id: "ingress",
-            ingress_id: "yaml",
-            deployment_id: "2024-01-12T15:36:10",
-            name: "k8s-ingress.yaml",
-            cluster: "k8s-ingress",
-            used: "测试",
-          },
-          pre: {
-            service_id: "ingress",
-            ingress_id: "yaml",
-            deployment_id: "2024-01-12T15:36:10",
-            cluster: "k8s-ingress",
-            name: "pre",
-            used: "测试",
-          },
-          prod: {
-            service_id: "ingress",
-            ingress_id: "yaml",
-            deployment_id: "2024-01-12T15:36:10",
-            cluster: "k8s-ingress",
-            name: "prod",
-            used: "测试",
-          },
-        };
         if (valid) {
-          create_app_temples_list(dd).then((response) => {
+          create_app_temples_list(this.postFrom).then((response) => {
             this.dialogFormVisible = false;
             this.$notify({
               title: "Success",
@@ -621,10 +346,7 @@ export default {
     resetTemp() {
       this.postFrom = {
         name: "",
-        content: "",
-        t_type: "deployment",
-        language: "yaml",
-        remark: "",
+        used: ""
       };
     },
     handleCreate() {
